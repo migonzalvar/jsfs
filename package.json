@@ -4,5 +4,10 @@
     "ecstatic": "^2.1.0",
     "watchify": "^3.9.0",
     "yo-yo": "^1.4.0"
+  },
+  "scripts": {
+    "build": "browserify main.js > public/bundle.js",
+    "watch": "watchify main.js -o public/bundle.js -dv",
+    "start": "ecstatic public -p 5000"
   }
 }
